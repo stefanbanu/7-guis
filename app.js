@@ -1,6 +1,12 @@
-window.onload = function () {
-    let counter = 1;
-    document.getElementById("btn").addEventListener('click', function () {
-        document.getElementById("app").innerHTML = counter++;
-    });
-};
+$(document).ready(function() {
+  $(function() {
+    $("#datepicker1").datepicker();
+    $("#datepicker2").datepicker();
+  });
+
+  var test = $("#comboOptions").val();
+  if (test === "A") {
+    console.log("working");
+    $("#datepicker2").datepicker("disable");
+  }
+});
