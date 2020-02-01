@@ -1,5 +1,4 @@
 function fromCelsiusToFahrenheit() {
-  console.log("test");
   let celsius = document.getElementById("celsius").value;
   document.getElementById("fahr").value = celsius * (9 / 5) + 32;
 }
